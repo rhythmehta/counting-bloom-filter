@@ -267,9 +267,6 @@ for size in testSet:
     fpSet.append((fp/size)*100)
 
 
-# In[12]:
-
-
 #plots each graph
 print("Using memory size of",m,"bits in counting bloom filter")
 plt.plot(testSet,fpSet, label='FPR')
@@ -280,4 +277,3 @@ plt.legend()
 plt.show()
 print("FPR initialized as",p*100,"%")
 print("Practical observation average:",sum(fpSet)/len(fpSet),"%")
-
